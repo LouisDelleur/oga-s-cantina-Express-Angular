@@ -10,14 +10,14 @@ ul{
 li a{
     height: 25rem;
     width: 25rem;
-    background-color: #414141;/* color bg des cases */
-    border: 2px solid whitesmoke;
+    background-color: #767474;/* color bg des cases */
+    border: 2px solid rgba(60, 219, 255, 0.879);
     border-radius: 0rem 0rem 0 4rem;
     margin: 0.5rem;
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    color: #e72929;
+    color: rgba(60, 219, 255, 0.879);
 }
 
 li a:hover{

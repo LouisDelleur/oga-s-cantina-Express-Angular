@@ -1,7 +1,7 @@
 header{
     background: rgba(195, 129, 17, 0.553);
     padding: 0;
-    border-bottom: 3px solid rgba(63, 63, 252, 0.879);
+    border-bottom: 3px solid rgba(60, 219, 255, 0.879);
 }
 
 a{
@@ -37,4 +37,11 @@ nav ul li a {
 strong{
     font-family: 'AttackPosition';
     font-size: 20px;
+}
+a.Foodheader{
+
+    padding: 1em;
+    display: inline-block;
+    
+
 }

@@ -1,3 +1,11 @@
+<app-not-found [visible]="!cart || cart.items.length <=0"
+    notFoundMessage="Cart Page is EMPTY !!"
+    resetLinkText="Go to Food Page">
+</app-not-found>
+
+@if (cart && cart.items.length >0) {
+
+
 <div class="container">
     <ul>
         @for (cartItem of cart.items; track cart.items) {
@@ -36,6 +44,8 @@
         <div>
             <div class="foods-count">{{cart.items.length}}</div>
             <div class="total-price">{{cart.totalPrice}} Credits</div>
+            <div><button routerLink="">Paid</button></div>
         </div>
     </div>
 </div>
+}
