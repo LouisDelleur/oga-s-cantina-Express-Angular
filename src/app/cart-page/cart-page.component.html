@@ -1,39 +1,41 @@
-<ul>
-    @for (cartItem of cart.items; track cart.items) {
-        <li>
-            <div>
-                <img [src]="cartItem.food.imageUrl" [alt]="cartItem.food.name">
-            </div>
-            <div>
-                <a routerLink="/FoodPage/{{cartItem.food.id}}">
-                    {{cartItem.food.name}}
-                </a>
-            </div>
+<div class="container">
+    <ul>
+        @for (cartItem of cart.items; track cart.items) {
+            <li>
+                <div>
+                    <img [src]="cartItem.food.imageUrl" [alt]="cartItem.food.name">
+                </div>
+                <div>
+                    <a routerLink="/FoodPage/{{cartItem.food.id}}">
+                        {{cartItem.food.name}}
+                    </a>
+                </div>
 
-            <div>
-                <select #quantitySelect (change)="changeQuantity(cartItem,quantitySelect.value)">
-                    <option value="">1</option>
-                    <option value="">2</option>
-                    <option value="">3</option>
-                    <option value="">4</option>
-                    <option value="">5</option>
-                    <option value="">66</option>
-                </select>
-            </div>
-            <div>
-                {{cartItem.price}} Republic Dataries
-            </div>
+                <div>
+                    <select #quantitySelect (change)="changeQuantity(cartItem,quantitySelect.value)">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="66">66</option>
+                    </select>
+                </div>
+                <div>
+                    {{cartItem.price}} Republic Dataries
+                </div>
 
-            <div>
-                <button class="remove-button" (click)="removeFromCart(cartItem)">Remove</button>
-            </div>
-        </li>
+                <div>
+                    <button class="remove-button" (click)="removeFromCart(cartItem)">Remove</button>
+                </div>
+            </li>
 
-    }
-</ul>
-<div class="checkout">
-    <div>
-        <div class="foods-count">{{cart.items.length}}</div>
-        <div class="total-price">{{cart.totalPrice}}</div>
+        }
+    </ul>
+    <div class="checkout">
+        <div>
+            <div class="foods-count">{{cart.items.length}}</div>
+            <div class="total-price">{{cart.totalPrice}} Credits</div>
+        </div>
     </div>
 </div>
