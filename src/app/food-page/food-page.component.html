@@ -1,0 +1,31 @@
+<div class="container">
+    <img [src]="food.imageUrl" [alt]="food.name">
+    <div class="details">
+        <div class="header">
+            <span class="name">{{food.name}}</span>
+            <span class="favorite {{food.favorite?'':'not'}}">♥</span>
+        </div>
+        <div class="rating">
+            <p>{{food.stars}}/5</p>
+        </div>
+    
+        <div class="origins">
+            <span>{{food.origins}}</span>
+        </div>
+    
+        <div class="tags">
+            <app-tags [foodPageTags]="food.tags" justifyContent="start"></app-tags>
+        </div>
+        <div class="cookTime">
+            <span>
+                Time to cook about <strong>{{food.cookTime}}</strong> 
+            </span>
+        </div> 
+    
+        <div class="price">
+            <span>{{food.price}} Republic Dataries</span>
+        </div>
+        <button type="button" (click)="addToCart()">Add To Cart !</button>
+    </div>
+
+</div>

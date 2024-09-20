@@ -1,0 +1,41 @@
+
+@font-face {
+    font-family:'Aurebesh-English';
+    src: url(/fonts/Aurebesh-English.ttf) format('truetype');
+
+}
+@font-face {
+    font-family:'Fresian';
+    src: url(/fonts/FresianAlphabetAF.otf)format('truetype');
+
+}
+
+@font-face {
+    font-family: 'AttackPosition';
+    src: url(/fonts/AttackPosition-Symbols.otf)format('truetype');
+}
+
+@font-face {
+    font-family: 'Domabesh' ;
+    src: url(/fonts/DomabeshConsole.otf);
+}
+
+html{
+    font-family: 'Orbitron';
+    font-size: 16px;
+}
+
+ *{
+    //font-family: 'Aurebesh-English'; 
+    box-sizing: border-box;  
+ }
+
+body{
+    background-color: rgb(126, 126, 126);
+    margin: 0;
+    font-size: 18px;
+}
+
+a{
+    text-decoration: none;
+}
